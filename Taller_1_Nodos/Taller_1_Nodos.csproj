@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Capa Estructural\ServicioLista.cs" />
     <Compile Include="Capa Gráfica\EliminarNodoAlFinal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,12 +71,6 @@
     <Compile Include="Capa Gráfica\InsertarNodoPorPosicion.Designer.cs">
       <DependentUpon>InsertarNodoPorPosicion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Capa Gráfica\InsertarNodoAlFinal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Capa Gráfica\InsertarNodoAlFinal.Designer.cs">
-      <DependentUpon>InsertarNodoAlFinal.cs</DependentUpon>
-    </Compile>
     <Compile Include="Capa Gráfica\InsertarNodoAlInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +89,7 @@
     <Compile Include="Capa Gráfica\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Capa Lógica\Huesped.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Capa Gráfica\EliminarNodoAlFinal.resx">
@@ -107,9 +103,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Capa Gráfica\InsertarNodoPorPosicion.resx">
       <DependentUpon>InsertarNodoPorPosicion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Capa Gráfica\InsertarNodoAlFinal.resx">
-      <DependentUpon>InsertarNodoAlFinal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Capa Gráfica\InsertarNodoAlInicio.resx">
       <DependentUpon>InsertarNodoAlInicio.cs</DependentUpon>
@@ -142,8 +135,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Capa Lógica\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

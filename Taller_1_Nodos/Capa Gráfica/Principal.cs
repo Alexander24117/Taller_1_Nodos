@@ -20,10 +20,10 @@ namespace Taller_1_Nodos
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Aplicación desarrollada por:" +
-                "Camilo Campos - 2220191028" +
-                "Elverth Pulido - 2220181048" +
-                "Rafael Acosta - 22...");
+            MessageBox.Show("Aplicación desarrollada por:" +Environment.NewLine+
+                "Camilo Campos - 2220191028" + Environment.NewLine +
+                "Elverth Pulido - 2220181048" + Environment.NewLine +
+                "Rafael Acosta - 2220191026");
         }
 
         private void Principal_Load(object sender, EventArgs e)
@@ -40,12 +40,6 @@ namespace Taller_1_Nodos
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void alFinalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            InsertarNodoAlFinal gui = new InsertarNodoAlFinal();
-            gui.Show();
         }
 
         private void porPosiciónToolStripMenuItem_Click(object sender, EventArgs e)

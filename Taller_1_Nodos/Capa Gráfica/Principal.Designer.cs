@@ -32,20 +32,19 @@ namespace Taller_1_Nodos
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.funcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertarNodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alInicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alFinalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarNodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.porPosiciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarNodosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alInicioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.alFinalToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.porPosiciónToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarNodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarNodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarListaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,7 +59,7 @@ namespace Taller_1_Nodos
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,8 +72,81 @@ namespace Taller_1_Nodos
             this.actualizarNodoToolStripMenuItem,
             this.mostrarListaToolStripMenuItem});
             this.funcionesToolStripMenuItem.Name = "funcionesToolStripMenuItem";
-            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(88, 26);
+            this.funcionesToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
             this.funcionesToolStripMenuItem.Text = "Funciones";
+            // 
+            // insertarNodosToolStripMenuItem
+            // 
+            this.insertarNodosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alInicioToolStripMenuItem,
+            this.porPosiciónToolStripMenuItem});
+            this.insertarNodosToolStripMenuItem.Name = "insertarNodosToolStripMenuItem";
+            this.insertarNodosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.insertarNodosToolStripMenuItem.Text = "Insertar Nodos";
+            // 
+            // alInicioToolStripMenuItem
+            // 
+            this.alInicioToolStripMenuItem.Name = "alInicioToolStripMenuItem";
+            this.alInicioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.alInicioToolStripMenuItem.Text = "Al inicio o al final";
+            this.alInicioToolStripMenuItem.Click += new System.EventHandler(this.alInicioToolStripMenuItem_Click);
+            // 
+            // porPosiciónToolStripMenuItem
+            // 
+            this.porPosiciónToolStripMenuItem.Name = "porPosiciónToolStripMenuItem";
+            this.porPosiciónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.porPosiciónToolStripMenuItem.Text = "Por posición";
+            this.porPosiciónToolStripMenuItem.Click += new System.EventHandler(this.porPosiciónToolStripMenuItem_Click);
+            // 
+            // eliminarNodosToolStripMenuItem
+            // 
+            this.eliminarNodosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alInicioToolStripMenuItem1,
+            this.alFinalToolStripMenuItem1,
+            this.porPosiciónToolStripMenuItem1});
+            this.eliminarNodosToolStripMenuItem.Name = "eliminarNodosToolStripMenuItem";
+            this.eliminarNodosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.eliminarNodosToolStripMenuItem.Text = "Eliminar Nodos";
+            // 
+            // alInicioToolStripMenuItem1
+            // 
+            this.alInicioToolStripMenuItem1.Name = "alInicioToolStripMenuItem1";
+            this.alInicioToolStripMenuItem1.Size = new System.Drawing.Size(173, 26);
+            this.alInicioToolStripMenuItem1.Text = "Al inicio ";
+            this.alInicioToolStripMenuItem1.Click += new System.EventHandler(this.alInicioToolStripMenuItem1_Click);
+            // 
+            // alFinalToolStripMenuItem1
+            // 
+            this.alFinalToolStripMenuItem1.Name = "alFinalToolStripMenuItem1";
+            this.alFinalToolStripMenuItem1.Size = new System.Drawing.Size(173, 26);
+            this.alFinalToolStripMenuItem1.Text = "Al final";
+            this.alFinalToolStripMenuItem1.Click += new System.EventHandler(this.alFinalToolStripMenuItem1_Click);
+            // 
+            // porPosiciónToolStripMenuItem1
+            // 
+            this.porPosiciónToolStripMenuItem1.Name = "porPosiciónToolStripMenuItem1";
+            this.porPosiciónToolStripMenuItem1.Size = new System.Drawing.Size(173, 26);
+            this.porPosiciónToolStripMenuItem1.Text = "Por posición";
+            this.porPosiciónToolStripMenuItem1.Click += new System.EventHandler(this.porPosiciónToolStripMenuItem1_Click);
+            // 
+            // buscarNodoToolStripMenuItem
+            // 
+            this.buscarNodoToolStripMenuItem.Name = "buscarNodoToolStripMenuItem";
+            this.buscarNodoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.buscarNodoToolStripMenuItem.Text = "Buscar Nodo";
+            // 
+            // actualizarNodoToolStripMenuItem
+            // 
+            this.actualizarNodoToolStripMenuItem.Name = "actualizarNodoToolStripMenuItem";
+            this.actualizarNodoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.actualizarNodoToolStripMenuItem.Text = "Actualizar Nodo";
+            // 
+            // mostrarListaToolStripMenuItem
+            // 
+            this.mostrarListaToolStripMenuItem.Name = "mostrarListaToolStripMenuItem";
+            this.mostrarListaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mostrarListaToolStripMenuItem.Text = "Mostrar Lista";
+            this.mostrarListaToolStripMenuItem.Click += new System.EventHandler(this.mostrarListaToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 
@@ -97,87 +169,6 @@ namespace Taller_1_Nodos
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(52, 24);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
-            // insertarNodosToolStripMenuItem
-            // 
-            this.insertarNodosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alInicioToolStripMenuItem,
-            this.alFinalToolStripMenuItem,
-            this.porPosiciónToolStripMenuItem});
-            this.insertarNodosToolStripMenuItem.Name = "insertarNodosToolStripMenuItem";
-            this.insertarNodosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.insertarNodosToolStripMenuItem.Text = "Insertar Nodos";
-            // 
-            // alInicioToolStripMenuItem
-            // 
-            this.alInicioToolStripMenuItem.Name = "alInicioToolStripMenuItem";
-            this.alInicioToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.alInicioToolStripMenuItem.Text = "Al inicio";
-            this.alInicioToolStripMenuItem.Click += new System.EventHandler(this.alInicioToolStripMenuItem_Click);
-            // 
-            // alFinalToolStripMenuItem
-            // 
-            this.alFinalToolStripMenuItem.Name = "alFinalToolStripMenuItem";
-            this.alFinalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.alFinalToolStripMenuItem.Text = "Al final";
-            this.alFinalToolStripMenuItem.Click += new System.EventHandler(this.alFinalToolStripMenuItem_Click);
-            // 
-            // eliminarNodosToolStripMenuItem
-            // 
-            this.eliminarNodosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.alInicioToolStripMenuItem1,
-            this.alFinalToolStripMenuItem1,
-            this.porPosiciónToolStripMenuItem1});
-            this.eliminarNodosToolStripMenuItem.Name = "eliminarNodosToolStripMenuItem";
-            this.eliminarNodosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.eliminarNodosToolStripMenuItem.Text = "Eliminar Nodos";
-            // 
-            // porPosiciónToolStripMenuItem
-            // 
-            this.porPosiciónToolStripMenuItem.Name = "porPosiciónToolStripMenuItem";
-            this.porPosiciónToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.porPosiciónToolStripMenuItem.Text = "Por posición";
-            this.porPosiciónToolStripMenuItem.Click += new System.EventHandler(this.porPosiciónToolStripMenuItem_Click);
-            // 
-            // alInicioToolStripMenuItem1
-            // 
-            this.alInicioToolStripMenuItem1.Name = "alInicioToolStripMenuItem1";
-            this.alInicioToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.alInicioToolStripMenuItem1.Text = "Al inicio ";
-            this.alInicioToolStripMenuItem1.Click += new System.EventHandler(this.alInicioToolStripMenuItem1_Click);
-            // 
-            // alFinalToolStripMenuItem1
-            // 
-            this.alFinalToolStripMenuItem1.Name = "alFinalToolStripMenuItem1";
-            this.alFinalToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.alFinalToolStripMenuItem1.Text = "Al final";
-            this.alFinalToolStripMenuItem1.Click += new System.EventHandler(this.alFinalToolStripMenuItem1_Click);
-            // 
-            // porPosiciónToolStripMenuItem1
-            // 
-            this.porPosiciónToolStripMenuItem1.Name = "porPosiciónToolStripMenuItem1";
-            this.porPosiciónToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
-            this.porPosiciónToolStripMenuItem1.Text = "Por posición";
-            this.porPosiciónToolStripMenuItem1.Click += new System.EventHandler(this.porPosiciónToolStripMenuItem1_Click);
-            // 
-            // buscarNodoToolStripMenuItem
-            // 
-            this.buscarNodoToolStripMenuItem.Name = "buscarNodoToolStripMenuItem";
-            this.buscarNodoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.buscarNodoToolStripMenuItem.Text = "Buscar Nodo";
-            // 
-            // actualizarNodoToolStripMenuItem
-            // 
-            this.actualizarNodoToolStripMenuItem.Name = "actualizarNodoToolStripMenuItem";
-            this.actualizarNodoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.actualizarNodoToolStripMenuItem.Text = "Actualizar Nodo";
-            // 
-            // mostrarListaToolStripMenuItem
-            // 
-            this.mostrarListaToolStripMenuItem.Name = "mostrarListaToolStripMenuItem";
-            this.mostrarListaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.mostrarListaToolStripMenuItem.Text = "Mostrar Lista";
-            this.mostrarListaToolStripMenuItem.Click += new System.EventHandler(this.mostrarListaToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -220,7 +211,6 @@ namespace Taller_1_Nodos
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem insertarNodosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alInicioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alFinalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem porPosiciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarNodosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alInicioToolStripMenuItem1;

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Taller_1_Nodos.Capa_Estructural;
 namespace Taller_1_Nodos.Capa_Gráfica
 {
     public partial class EliminarNodoAlFinal : Form
@@ -15,6 +15,12 @@ namespace Taller_1_Nodos.Capa_Gráfica
         public EliminarNodoAlFinal()
         {
             InitializeComponent();
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            ServicioLista.EliminarFinal();
+            MessageBox.Show("Se ha eliminado exitosamente");
         }
     }
 }
